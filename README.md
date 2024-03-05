@@ -8,8 +8,8 @@ for i in $(ls); do                        # runs through the 'items' in this dir
      echo $fname                           
      cd $i                                    # move into the dir       
      for z in *.tab; do               # loop over files with tab extension
-       echo $z  
        mv $z ${fname}.${z}         # put the prefix to the file.               
+       echo $z ${fname}.${z} 
      done                                        
      cd ..                                         
   fi                                              
